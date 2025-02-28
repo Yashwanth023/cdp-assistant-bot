@@ -5,7 +5,7 @@
 
 CDP Assistant is an intelligent chatbot designed to provide information and guidance about Customer Data Platforms (CDPs). The application allows users to ask questions about four major CDPs: Segment, mParticle, Lytics, and Zeotap, and receive accurate, relevant answers sourced from official documentation.
 
-![CDP Assistant Preview](public/og-image.png)
+
 
 ## Features
 
