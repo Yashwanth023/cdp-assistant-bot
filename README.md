@@ -1,69 +1,105 @@
-# Welcome to your Lovable project
 
-## Project info
+# CDP Assistant
 
-**URL**: https://lovable.dev/projects/8cbee652-ff26-49bb-beb0-04e1e743e5e0
+## Project Overview
 
-## How can I edit this code?
+CDP Assistant is an intelligent chatbot designed to provide information and guidance about Customer Data Platforms (CDPs). The application allows users to ask questions about four major CDPs: Segment, mParticle, Lytics, and Zeotap, and receive accurate, relevant answers sourced from official documentation.
 
-There are several ways of editing your application.
+![CDP Assistant Preview](public/og-image.png)
 
-**Use Lovable**
+## Features
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/8cbee652-ff26-49bb-beb0-04e1e743e5e0) and start prompting.
+### Core Functionality
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Interactive Chat Interface**: Sleek, modern chat UI with smooth animations and responsive design.
+- **Intelligent Query Processing**: The assistant can understand and respond to various types of questions, including:
+  - How-to guides for specific tasks within each CDP
+  - General information about CDP features and capabilities
+  - Comparisons between different platforms
+  - Platform-specific implementation details
 
-**Use your preferred IDE**
+- **Real-time Response Generation**: Immediate responses with visual typing indicators for a natural conversational feel.
+- **CDP-Specific Visual Cues**: Color-coded responses based on the CDP being discussed for better visual organization.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Question Handling
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- **"How-to" Question Recognition**: Automatically detects when users ask for step-by-step instructions and formats responses accordingly.
+- **Cross-CDP Comparisons**: Can compare features, workflows, and implementations across different platforms.
+- **Query Relevance Filtering**: Intelligently handles irrelevant queries by steering the conversation back to CDP-related topics.
+- **Question Variation Support**: Accommodates different phrasing styles and terminology for the same question.
 
-Follow these steps:
+### Documentation Integration
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- **Automated Information Extraction**: Retrieves specific, relevant information from extensive CDP documentation.
+- **Direct Documentation Links**: Provides source links to official documentation for deeper exploration.
+- **Keyword-Based Relevance Scoring**: Ranks information based on relevance to user queries for accurate responses.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### User Experience
 
-# Step 3: Install the necessary dependencies.
-npm i
+- **Dark/Light Mode Toggle**: Support for both light and dark themes with system preference detection.
+- **User Authentication**: Complete login and registration system with:
+  - Form validation
+  - Secure local storage
+  - User session persistence
+  - Personalized experience based on login status
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+- **Responsive Design**: Fully responsive layout that works seamlessly on desktop and mobile devices.
+- **Accessibility Features**: Semantic HTML, keyboard navigation support, and screen reader compatibility.
 
-**Edit a file directly in GitHub**
+### Visual Design
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- **Neo-morphic UI Elements**: Subtle shadows and glass-like effects for a modern, sophisticated look.
+- **Smooth Animations**: Thoughtful motion design for message transitions, typing indicators, and UI interactions.
+- **Platform-Specific Color Coding**:
+  - Segment: Green (#52BD95)
+  - mParticle: Red (#FF5A60)
+  - Lytics: Purple (#4842B7)
+  - Zeotap: Pink (#FF4785)
 
-**Use GitHub Codespaces**
+## Technical Implementation
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+- **Frontend Framework**: React with TypeScript for type safety and better developer experience.
+- **State Management**: React Context API for global state management with custom hooks.
+- **Styling**: Tailwind CSS for utility-first styling with custom animations and effects.
+- **Animation Library**: Framer Motion for smooth, physics-based animations.
+- **Authentication**: Custom implementation with local storage for demo purposes.
+- **Query Processing**: Custom NLP-like functionality to extract intent and context from user queries.
+- **Data Storage**: In-memory documentation database with search capabilities.
 
-## What technologies are used for this project?
+## CDP Platforms Covered
 
-This project is built with .
+### Segment
+The Customer Data Platform for developers, offering powerful tools for collecting, cleaning, and controlling customer data.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### mParticle
+An enterprise customer data platform that connects all of your data and allows you to use it anywhere.
 
-## How can I deploy this project?
+### Lytics
+A customer data platform focused on personalized marketing at scale using machine learning.
 
-Simply open [Lovable](https://lovable.dev/projects/8cbee652-ff26-49bb-beb0-04e1e743e5e0) and click on Share -> Publish.
+### Zeotap
+A first-party customer data platform specializing in identity resolution and enrichment.
 
-## I want to use a custom domain - is that possible?
+## Getting Started
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+1. Clone the repository
+2. Install dependencies with `npm install`
+3. Start the development server with `npm run dev`
+4. Open your browser to the local development URL
+
+## Examples of Questions
+
+- "How do I set up a new source in Segment?"
+- "How can I create a user profile in mParticle?"
+- "How do I build an audience segment in Lytics?"
+- "How can I integrate my data with Zeotap?"
+- "Compare audience creation between Segment and Lytics"
+- "What's the difference between mParticle and Zeotap for identity resolution?"
+
+## Future Enhancements
+
+- Integration with actual CDP APIs for real-time data access
+- Advanced machine learning for query understanding and response generation
+- User history and conversation memory
+- Multi-language support
+- Voice interface for hands-free interaction
